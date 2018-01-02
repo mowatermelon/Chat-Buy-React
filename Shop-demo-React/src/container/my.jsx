@@ -5,7 +5,7 @@ const Item = List.Item;
 
 const My = ({ history }) => (
   <div className="goods-list">
-    <List style={{ marginTop: "100px" }}>
+    <List style={{ marginTop: "3.5rem" }}>
       <Item arrow="horizontal" onClick={() => history.push("/me/orders")}>
         我的订单
       </Item>

@@ -34,11 +34,11 @@ class RegisterForm extends React.Component {
       <div style={{ marginTop: "100px" }}>
         <WingBlank>
           <List>
-            <InputItem onChange={v => this.handleTextChange("user", v)}>
+            <InputItem onChange={v => this.handleTextChange("user", v)} placeholder="请输入用户名">
               用户名
             </InputItem>
             <WhiteSpace />
-            <InputItem onChange={v => this.handleTextChange("pwd", v)}>
+            <InputItem onChange={v => this.handleTextChange("pwd", v)} type="password" placeholder="****">
               密码
             </InputItem>
             <WhiteSpace />

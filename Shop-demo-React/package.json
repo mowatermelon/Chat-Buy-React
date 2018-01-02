@@ -1,5 +1,5 @@
 {
-  "name": "chat-buy-react",
+  "name": "shop-demo-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -74,8 +74,7 @@
   "devDependencies": {},
   "scripts": {
     "start": "node scripts/start.js",
-    "server": "NODE_ENV=development BABEL_ENV=development nodemon --exec babel-node server/server.js --presets=env",
-    "dev": "nodemon --exec babel-node server/server.js",
+    "server": "nodemon --exec babel-node server/server.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
   },
@@ -121,7 +120,9 @@
         {
           "targets": {
             "node": true
-          }
+          },
+          "NODE_ENV": "development",
+          "BABEL_ENV": "development"
         }
       ]
     ],

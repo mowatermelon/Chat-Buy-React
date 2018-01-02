@@ -1,0 +1,25 @@
+{
+  "presets": [
+    "react-app",
+    [
+      "env",
+      {
+        "targets": {
+          "node": true
+        },
+        "NODE_ENV":"development",
+        "BABEL_ENV":"development"
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "antd-mobile",
+        "style": "css"
+      }
+    ],
+    "transform-decorators-legacy"
+  ]
+}
